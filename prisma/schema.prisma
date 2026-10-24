@@ -20,3 +20,10 @@ model User {
   passwordHash String
   createdAt    DateTime @default(now())
 }
+
+model course {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+  createdAt   DateTime @default(now())
+}
