@@ -1,0 +1,19 @@
+info:
+  name: PATCH
+  type: http
+  seq: 2
+
+http:
+  method: PATCH
+  url: "{{baseUrl}}/api/courses/1"
+  body:
+    type: json
+    data: '{ "title": "Titulo modificado" }'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
